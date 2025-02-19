@@ -1,0 +1,45 @@
+{
+  "endpoints": {
+    "method": "delete",
+    "path": "/user/{username}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [],
+    "path": [
+      {
+        "name": "username",
+        "description": "The name that needs to be deleted",
+        "isRequired": true,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "Invalid username supplied",
+      "description": "Invalid username supplied",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    },
+    {
+      "name": "User not found",
+      "description": "User not found",
+      "status": "Not Found",
+      "statusCode": 404,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

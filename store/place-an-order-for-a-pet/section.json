@@ -1,0 +1,201 @@
+{
+  "endpoints": {
+    "method": "post",
+    "path": "/store/order"
+  },
+  "request": {
+    "query": [],
+    "body": [
+      {
+        "name": "id",
+        "description": "",
+        "isRequired": false,
+        "valueType": "integer",
+        "options": {
+          "format": "int64",
+          "example": "10"
+        },
+        "items": [],
+        "value": "10"
+      },
+      {
+        "name": "petId",
+        "description": "",
+        "isRequired": false,
+        "valueType": "integer",
+        "options": {
+          "format": "int64",
+          "example": "198772"
+        },
+        "items": [],
+        "value": "198772"
+      },
+      {
+        "name": "quantity",
+        "description": "",
+        "isRequired": false,
+        "valueType": "integer",
+        "options": {
+          "format": "int32",
+          "example": "7"
+        },
+        "items": [],
+        "value": "7"
+      },
+      {
+        "name": "shipDate",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "format": "date-time"
+        },
+        "items": [],
+        "value": ""
+      },
+      {
+        "name": "status",
+        "description": "Order Status",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "enumValue": [
+            {
+              "value": "placed"
+            },
+            {
+              "value": "approved"
+            },
+            {
+              "value": "delivered"
+            }
+          ],
+          "example": "approved"
+        },
+        "items": [],
+        "value": "approved"
+      },
+      {
+        "name": "complete",
+        "description": "",
+        "isRequired": false,
+        "valueType": "boolean",
+        "options": {},
+        "items": [],
+        "value": ""
+      }
+    ],
+    "header": [],
+    "path": [],
+    "contentType": "application/json",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int64",
+            "example": "10"
+          },
+          "items": [],
+          "value": "10"
+        },
+        {
+          "name": "petId",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int64",
+            "example": "198772"
+          },
+          "items": [],
+          "value": "198772"
+        },
+        {
+          "name": "quantity",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int32",
+            "example": "7"
+          },
+          "items": [],
+          "value": "7"
+        },
+        {
+          "name": "shipDate",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "format": "date-time"
+          },
+          "items": [],
+          "value": ""
+        },
+        {
+          "name": "status",
+          "description": "Order Status",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "enumValue": [
+              {
+                "value": "placed"
+              },
+              {
+                "value": "approved"
+              },
+              {
+                "value": "delivered"
+              }
+            ],
+            "example": "approved"
+          },
+          "items": [],
+          "value": "approved"
+        },
+        {
+          "name": "complete",
+          "description": "",
+          "isRequired": false,
+          "valueType": "boolean",
+          "options": {},
+          "items": [],
+          "value": ""
+        }
+      ],
+      "contentType": "application/json"
+    },
+    {
+      "name": "Invalid input",
+      "description": "Invalid input",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    },
+    {
+      "name": "Validation exception",
+      "description": "Validation exception",
+      "status": "422",
+      "statusCode": 422,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

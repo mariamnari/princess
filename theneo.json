@@ -1,0 +1,125 @@
+{
+  "id": "67b499138029e0a6defda092",
+  "name": "cli-test-1",
+  "lastExport": "2025-02-18T14:29:03.249Z",
+  "sections": [
+    {
+      "name": "Swagger Petstore - OpenAPI 3.0",
+      "slug": "swagger-petstore-openapi-3-0",
+      "children": []
+    },
+    {
+      "name": "pet",
+      "slug": "pet",
+      "children": [
+        {
+          "name": "Update an existing pet",
+          "slug": "update-an-existing-pet",
+          "children": []
+        },
+        {
+          "name": "Add a new pet to the store",
+          "slug": "add-a-new-pet-to-the-store",
+          "children": []
+        },
+        {
+          "name": "Finds Pets by status",
+          "slug": "finds-pets-by-status",
+          "children": []
+        },
+        {
+          "name": "Finds Pets by tags",
+          "slug": "finds-pets-by-tags",
+          "children": []
+        },
+        {
+          "name": "Find pet by ID",
+          "slug": "find-pet-by-id",
+          "children": []
+        },
+        {
+          "name": "Updates a pet in the store with form data",
+          "slug": "updates-a-pet-in-the-store-with-form-data",
+          "children": []
+        },
+        {
+          "name": "Deletes a pet",
+          "slug": "deletes-a-pet",
+          "children": []
+        },
+        {
+          "name": "uploads an image",
+          "slug": "uploads-an-image",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "store",
+      "slug": "store",
+      "children": [
+        {
+          "name": "Returns pet inventories by status",
+          "slug": "returns-pet-inventories-by-status",
+          "children": []
+        },
+        {
+          "name": "Place an order for a pet",
+          "slug": "place-an-order-for-a-pet",
+          "children": []
+        },
+        {
+          "name": "Find purchase order by ID",
+          "slug": "find-purchase-order-by-id",
+          "children": []
+        },
+        {
+          "name": "Delete purchase order by ID",
+          "slug": "delete-purchase-order-by-id",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "user",
+      "slug": "user",
+      "children": [
+        {
+          "name": "Create user",
+          "slug": "create-user",
+          "children": []
+        },
+        {
+          "name": "Creates list of users with given input array",
+          "slug": "creates-list-of-users-with-given-input-array",
+          "children": []
+        },
+        {
+          "name": "Logs user into the system",
+          "slug": "logs-user-into-the-system",
+          "children": []
+        },
+        {
+          "name": "Logs out current logged in user session",
+          "slug": "logs-out-current-logged-in-user-session",
+          "children": []
+        },
+        {
+          "name": "Get user by user name",
+          "slug": "get-user-by-user-name",
+          "children": []
+        },
+        {
+          "name": "Update user",
+          "slug": "update-user",
+          "children": []
+        },
+        {
+          "name": "Delete user",
+          "slug": "delete-user",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/user/login"
+  },
+  "request": {
+    "query": [
+      {
+        "name": "username",
+        "description": "The user name for login",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      },
+      {
+        "name": "password",
+        "description": "The password for login in clear text",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "body": [],
+    "header": [],
+    "path": [],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [],
+      "contentType": "application/json"
+    },
+    {
+      "name": "Invalid username/password supplied",
+      "description": "Invalid username/password supplied",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

@@ -1,0 +1,58 @@
+{
+  "endpoints": {
+    "method": "post",
+    "path": "/pet/{petId}"
+  },
+  "request": {
+    "query": [
+      {
+        "name": "name",
+        "description": "Name of pet that needs to be updated",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      },
+      {
+        "name": "status",
+        "description": "Status of pet that needs to be updated",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "body": [],
+    "header": [],
+    "path": [
+      {
+        "name": "petId",
+        "description": "ID of pet that needs to be updated",
+        "isRequired": true,
+        "valueType": "integer",
+        "options": {
+          "format": "int64"
+        },
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "Invalid input",
+      "description": "Invalid input",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

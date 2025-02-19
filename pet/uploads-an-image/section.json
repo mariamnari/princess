@@ -1,0 +1,88 @@
+{
+  "endpoints": {
+    "method": "post",
+    "path": "/pet/{petId}/uploadImage"
+  },
+  "request": {
+    "query": [
+      {
+        "name": "additionalMetadata",
+        "description": "Additional Metadata",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "body": [
+      {
+        "name": "File",
+        "value": "/path/to/the/file",
+        "valueType": "binary",
+        "isRequired": false,
+        "description": "",
+        "items": []
+      }
+    ],
+    "header": [],
+    "path": [
+      {
+        "name": "petId",
+        "description": "ID of pet to update",
+        "isRequired": true,
+        "valueType": "integer",
+        "options": {
+          "format": "int64"
+        },
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "file",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [
+        {
+          "name": "code",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int32"
+          },
+          "items": [],
+          "value": ""
+        },
+        {
+          "name": "type",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {},
+          "items": [],
+          "value": ""
+        },
+        {
+          "name": "message",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {},
+          "items": [],
+          "value": ""
+        }
+      ],
+      "contentType": "application/json"
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

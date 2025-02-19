@@ -1,0 +1,10 @@
+{
+  "endpoints": {
+    "method": "GET",
+    "path": ""
+  },
+  "request": null,
+  "responses": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

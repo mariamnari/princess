@@ -1,0 +1,27 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/user/logout"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [],
+    "path": [],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "successful operation",
+      "description": "successful operation",
+      "status": "default",
+      "statusCode": 200,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

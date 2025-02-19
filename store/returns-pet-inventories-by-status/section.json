@@ -1,0 +1,36 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/store/inventory"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "api_key",
+        "valueType": "string",
+        "value": "",
+        "description": "",
+        "isRequired": false,
+        "items": []
+      }
+    ],
+    "path": [],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [],
+      "contentType": "application/json"
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

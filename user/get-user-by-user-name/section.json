@@ -1,0 +1,144 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/user/{username}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [],
+    "path": [
+      {
+        "name": "username",
+        "description": "The name that needs to be fetched. Use user1 for testing. ",
+        "isRequired": true,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int64",
+            "example": "10"
+          },
+          "items": [],
+          "value": "10"
+        },
+        {
+          "name": "username",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "theUser"
+          },
+          "items": [],
+          "value": "theUser"
+        },
+        {
+          "name": "firstName",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "John"
+          },
+          "items": [],
+          "value": "John"
+        },
+        {
+          "name": "lastName",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "James"
+          },
+          "items": [],
+          "value": "James"
+        },
+        {
+          "name": "email",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "john@email.com"
+          },
+          "items": [],
+          "value": "john@email.com"
+        },
+        {
+          "name": "password",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "12345"
+          },
+          "items": [],
+          "value": "12345"
+        },
+        {
+          "name": "phone",
+          "description": "",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "example": "12345"
+          },
+          "items": [],
+          "value": "12345"
+        },
+        {
+          "name": "userStatus",
+          "description": "User Status",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int32",
+            "example": "1"
+          },
+          "items": [],
+          "value": "1"
+        }
+      ],
+      "contentType": "application/json"
+    },
+    {
+      "name": "Invalid username supplied",
+      "description": "Invalid username supplied",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    },
+    {
+      "name": "User not found",
+      "description": "User not found",
+      "status": "Not Found",
+      "statusCode": 404,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

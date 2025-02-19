@@ -1,0 +1,221 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/pet/{petId}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "api_key",
+        "valueType": "string",
+        "value": "",
+        "description": "",
+        "isRequired": false,
+        "items": []
+      }
+    ],
+    "path": [
+      {
+        "name": "petId",
+        "description": "ID of pet to return",
+        "isRequired": true,
+        "valueType": "integer",
+        "options": {
+          "format": "int64"
+        },
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "200",
+      "description": "successful operation",
+      "status": "OK",
+      "statusCode": 200,
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "valueType": "integer",
+          "options": {
+            "format": "int64",
+            "example": "10"
+          },
+          "items": [],
+          "value": "10"
+        },
+        {
+          "name": "name",
+          "description": "",
+          "isRequired": true,
+          "valueType": "string",
+          "options": {
+            "example": "doggie"
+          },
+          "items": [],
+          "value": "doggie"
+        },
+        {
+          "name": "category",
+          "description": "",
+          "isRequired": false,
+          "valueType": "object",
+          "options": {
+            "xml": {
+              "name": "category"
+            }
+          },
+          "items": [
+            {
+              "name": "id",
+              "description": "",
+              "isRequired": false,
+              "valueType": "integer",
+              "options": {
+                "format": "int64",
+                "example": "1"
+              },
+              "items": [],
+              "value": "1"
+            },
+            {
+              "name": "name",
+              "description": "",
+              "isRequired": false,
+              "valueType": "string",
+              "options": {
+                "example": "Dogs"
+              },
+              "items": [],
+              "value": "Dogs"
+            }
+          ],
+          "value": ""
+        },
+        {
+          "name": "photoUrls",
+          "description": "",
+          "isRequired": true,
+          "valueType": "array",
+          "options": {
+            "xml": {
+              "wrapped": true
+            }
+          },
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "valueType": "array",
+              "options": {
+                "xml": {
+                  "wrapped": true
+                }
+              },
+              "items": [],
+              "value": ""
+            }
+          ],
+          "value": ""
+        },
+        {
+          "name": "tags",
+          "description": "",
+          "isRequired": false,
+          "valueType": "array",
+          "options": {
+            "xml": {
+              "wrapped": true
+            }
+          },
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "valueType": "array",
+              "options": {
+                "xml": {
+                  "wrapped": true
+                }
+              },
+              "items": [
+                {
+                  "name": "id",
+                  "description": "",
+                  "isRequired": false,
+                  "valueType": "integer",
+                  "options": {
+                    "format": "int64"
+                  },
+                  "items": [],
+                  "value": ""
+                },
+                {
+                  "name": "name",
+                  "description": "",
+                  "isRequired": false,
+                  "valueType": "string",
+                  "options": {},
+                  "items": [],
+                  "value": ""
+                }
+              ],
+              "value": ""
+            }
+          ],
+          "value": ""
+        },
+        {
+          "name": "status",
+          "description": "pet status in the store",
+          "isRequired": false,
+          "valueType": "string",
+          "options": {
+            "enumValue": [
+              {
+                "value": "available"
+              },
+              {
+                "value": "pending"
+              },
+              {
+                "value": "sold"
+              }
+            ]
+          },
+          "items": [],
+          "value": "available"
+        }
+      ],
+      "contentType": "application/json"
+    },
+    {
+      "name": "Invalid ID supplied",
+      "description": "Invalid ID supplied",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    },
+    {
+      "name": "Pet not found",
+      "description": "Pet not found",
+      "status": "Not Found",
+      "statusCode": 404,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

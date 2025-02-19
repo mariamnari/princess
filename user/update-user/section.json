@@ -1,0 +1,128 @@
+{
+  "endpoints": {
+    "method": "put",
+    "path": "/user/{username}"
+  },
+  "request": {
+    "query": [],
+    "body": [
+      {
+        "name": "id",
+        "description": "",
+        "isRequired": false,
+        "valueType": "integer",
+        "options": {
+          "format": "int64",
+          "example": "10"
+        },
+        "items": [],
+        "value": "10"
+      },
+      {
+        "name": "username",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "theUser"
+        },
+        "items": [],
+        "value": "theUser"
+      },
+      {
+        "name": "firstName",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "John"
+        },
+        "items": [],
+        "value": "John"
+      },
+      {
+        "name": "lastName",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "James"
+        },
+        "items": [],
+        "value": "James"
+      },
+      {
+        "name": "email",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "john@email.com"
+        },
+        "items": [],
+        "value": "john@email.com"
+      },
+      {
+        "name": "password",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "12345"
+        },
+        "items": [],
+        "value": "12345"
+      },
+      {
+        "name": "phone",
+        "description": "",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {
+          "example": "12345"
+        },
+        "items": [],
+        "value": "12345"
+      },
+      {
+        "name": "userStatus",
+        "description": "User Status",
+        "isRequired": false,
+        "valueType": "integer",
+        "options": {
+          "format": "int32",
+          "example": "1"
+        },
+        "items": [],
+        "value": "1"
+      }
+    ],
+    "header": [],
+    "path": [
+      {
+        "name": "username",
+        "description": "name that need to be deleted",
+        "isRequired": true,
+        "valueType": "string",
+        "options": {},
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "application/json",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "successful operation",
+      "description": "successful operation",
+      "status": "default",
+      "statusCode": 200,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}

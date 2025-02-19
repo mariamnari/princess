@@ -1,0 +1,47 @@
+{
+  "endpoints": {
+    "method": "delete",
+    "path": "/store/order/{orderId}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [],
+    "path": [
+      {
+        "name": "orderId",
+        "description": "ID of the order that needs to be deleted",
+        "isRequired": true,
+        "valueType": "integer",
+        "options": {
+          "format": "int64"
+        },
+        "value": "",
+        "items": []
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": []
+  },
+  "responses": [
+    {
+      "name": "Invalid ID supplied",
+      "description": "Invalid ID supplied",
+      "status": "Bad Request",
+      "statusCode": 400,
+      "contentType": "application/json",
+      "body": []
+    },
+    {
+      "name": "Order not found",
+      "description": "Order not found",
+      "status": "Not Found",
+      "statusCode": 404,
+      "contentType": "application/json",
+      "body": []
+    }
+  ],
+  "dataExample": [],
+  "endpointSummary": []
+}
