@@ -16,7 +16,7 @@
     "body": [],
     "header": [
       {
-        "name": "test-api-key",
+        "name": "test-header",
         "description": "test-api-key",
         "isRequired": false,
         "valueType": "string",
