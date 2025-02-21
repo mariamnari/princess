@@ -1,0 +1,34 @@
+codename: Update Theneo API Reference
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  update-doc:
+    name: Update Theneo API Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Update Documentation on Theneo
+        uses: Theneo-Inc/api-documentation@1.8.0
+        with:
+          FILE_PATH: openapi_spec.json
+
+          PROJECT_SLUG: /github-actions/
+      
+          WORKSPACE_SLUG: /mariam-n-testing/
+
+          SECRET: 2445a525-7340-40ea-a5f3-15d3571cfa7b
+
+          AUTO_PUBLISH: true
+
+          IMPORT_OPTION: overwrite
+          
+
+          INCLUDE_GITHUB_METADATA: true
