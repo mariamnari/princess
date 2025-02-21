@@ -2,7 +2,8 @@ Theneo is the quickest, simplest way to generate high-quality, interactive API d
 
 Discover the seamless integration capabilities offered by our platform, allowing you to effortlessly import your extensive API collection. Whether you prefer a hands-on approach with manual import or seek the convenience of automated processes, our suite of integration tools is tailored to enhance your workflow across your preferred platforms, including popular choices like Postman.
 
-Our comprehensive support extends beyond the traditional realms of REST, SOAP, GraphQL and Async APIs, encompassing a wide array of API types to accommodate your diverse development needs. With our robust solutions and user-centric approach, you can confidently embark on crafting your REST, GraphQL, or any other API with the assurance that we've got every aspect covered, ensuring efficiency and reliability throughout your development journey.
+I need to add a new pet to the store please help meeeeeee
+
 
 test export
 Love**is**bold  
@@ -21,7 +22,3 @@ I just love __bold text__.
     - Indented item
 - Fourth item
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |

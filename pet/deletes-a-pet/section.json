@@ -4,12 +4,20 @@
     "path": "/pet/{petId}"
   },
   "request": {
-    "query": [],
+    "query": [
+      {
+        "name": "test-query",
+        "description": "test-query",
+        "isRequired": false,
+        "valueType": "string",
+        "options": {}
+      }
+    ],
     "body": [],
     "header": [
       {
-        "name": "api_key",
-        "description": "",
+        "name": "test-header",
+        "description": "test-api-key",
         "isRequired": false,
         "valueType": "string",
         "options": {},
@@ -23,6 +31,7 @@
         "description": "Pet id to delete",
         "isRequired": true,
         "valueType": "string",
+
         "options": {
           "format": "int64"
         },
