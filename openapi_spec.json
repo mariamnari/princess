@@ -10,7 +10,7 @@
         "tags": [
           "Authorization"
         ],
-        "summary": "testing",
+        "summary": "testagain",
         "description": "- You need an Authorized Access Token to access any of the Platform APIs.\n- One Access Token will be valid for only 24 hours.\n- After 24 hours, you can renew the token by using the Authorize Endpoint.\n- This will issue another access_token valid for 24 hrs.",
         "operationId": "Authorization_authorize",
         "parameters": [],
