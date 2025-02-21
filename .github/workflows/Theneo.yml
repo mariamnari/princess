@@ -1,4 +1,4 @@
-codename: Update Theneo API Reference
+name: Update Theneo API Reference
 on:
   pull_request:
     branches:
