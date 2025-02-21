@@ -105,7 +105,7 @@
                         "properties": {
                           "loc": {
                             "type": "array",
-                            "description": "",
+                            "description": "description for array",
                             "example": [
                               []
                             ],
@@ -348,8 +348,8 @@
         "tags": [
           "Retail"
         ],
-        "summary": "Displayboard Recognition",
-        "description": "Computer Vision APIs to Digitize MSME Onboarding Documents.",
+        "summary": "test summary",
+        "description": "test description",
         "operationId": "Retail_displayboard-recognition",
         "parameters": [],
         "responses": {
@@ -365,7 +365,7 @@
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "400 bad request",
             "content": {
               "application/json": {
                 "schema": {
@@ -448,12 +448,12 @@
                             }
                           },
                           "msg": {
-                            "type": "string",
+                            "type": "integer",
                             "description": "",
                             "example": ""
                           },
                           "type": {
-                            "type": "string",
+                            "type": "integer",
                             "description": "",
                             "example": ""
                           }
