@@ -19,10 +19,10 @@
     ],
     "path": [
       {
-        "name": "petId",
+        "name": "test",
         "description": "Pet id to delete",
         "isRequired": true,
-        "valueType": "integer",
+        "valueType": "string",
         "options": {
           "format": "int64"
         },
