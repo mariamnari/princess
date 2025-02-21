@@ -20,9 +20,9 @@ jobs:
         with:
           FILE_PATH: openapi_spec.json
 
-          PROJECT_SLUG: /github-actions/
+          PROJECT_SLUG: github-actions
       
-          WORKSPACE_SLUG: /mariam-n-testing/
+          WORKSPACE_SLUG: mariam-n-testing
 
           SECRET: 2445a525-7340-40ea-a5f3-15d3571cfa7b
 
