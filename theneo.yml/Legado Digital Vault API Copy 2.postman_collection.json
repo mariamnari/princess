@@ -52,7 +52,7 @@
 													{
 														"description": "Added as a part of security scheme: bearer",
 														"key": "Authorization",
-														"value": "Bearer <token>"
+														"value": "theneo-token"
 													}
 												],
 												"url": {
