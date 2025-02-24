@@ -18,7 +18,7 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: theneo.yml/Legado Digital Vault API Copy 2.postman_collection.json
+          FILE_PATH: theneo.yml/openapi3.yaml
 
           PROJECT_SLUG: github-actions
       
