@@ -24,6 +24,9 @@ externalDocs:
   url: http://swagger.io
 servers:
   - url: https://petstore3.swagger.io/api/v3
+    description: The production API server
+  - url: https://petstore3-staging.swagger.io/api/v3
+    description: The staging API server
 tags:
   - name: pet
     description: Everything about your Pets
