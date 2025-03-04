@@ -10,7 +10,7 @@
         "tags": [
           "Authorization"
         ],
-        "summary": "testagain",
+        "summary": "test summary",
         "description": "test description",
         "operationId": "Authorization_authorize",
         "parameters": [],
