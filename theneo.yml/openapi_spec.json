@@ -10,7 +10,7 @@
         "tags": [
           "Authorization"
         ],
-        "summary": "testagain",
+        "summary": "test summary",
         "description": "test description",
         "operationId": "Authorization_authorize",
         "parameters": [],
@@ -48,7 +48,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized",
+            "description": "test description",
             "content": {
               "application/json": {
                 "schema": {
