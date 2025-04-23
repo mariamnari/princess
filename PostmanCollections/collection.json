@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "authorization",
+			"name": "test",
 			"id": "26bf2cba-d164-4771-a2d2-559b3accd0cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -34,7 +34,7 @@
 						}
 					}
 				},
-				"url": "https://api.theneo.live/auth/login/"
+				"url": "https://api.theneo.live/auth/login/test"
 			},
 			"response": []
 		},
@@ -66,7 +66,7 @@
 						}
 					}
 				},
-				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/invite"
+				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/invite/test"
 			},
 			"response": [
 				{
@@ -209,7 +209,7 @@
 						"value": "application/json"
 					}
 				],
-				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d"
+				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/test"
 			},
 			"response": []
 		},
