@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Authorization",
+			"name": "test",
 			"id": "26bf2cba-d164-4771-a2d2-559b3accd0cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -34,7 +34,7 @@
 						}
 					}
 				},
-				"url": "https://api.theneo.live/auth/login/"
+				"url": "https://api.theneo.live/auth/login/test/v1"
 			},
 			"response": []
 		},
@@ -1686,21 +1686,15 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
-			"id": "a59403b9-10c3-4b90-89db-5d59289863ba",
+			"name": "test",
+			"id": "47abb581-ffcf-4254-b721-14db16f19c42",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "test",
-						"value": "",
-						"type": "text"
-					}
-				],
-				"url": "new/request"
+				"header": [],
+				"url": "test"
 			},
 			"response": []
 		}
