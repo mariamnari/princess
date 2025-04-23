@@ -18,13 +18,13 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: theneo.yml/openapi3.yaml
+          FILE_PATH: postmanCollection/collection.json
 
           PROJECT_SLUG: github-actions
       
           WORKSPACE_SLUG: mariam-n-testing
 
-          SECRET: 2445a525-7340-40ea-a5f3-15d3571cfa7b
+          SECRET: b41cf9a2-983e-4215-8db6-f3b1c9b8facd
 
           AUTO_PUBLISH: true
 
