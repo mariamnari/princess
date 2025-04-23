@@ -1,11 +1,11 @@
-name: Update Theneo API Reference
+name: Update Documentation
 on:
   pull_request:
     branches:
       - main
 jobs:
   update-doc:
-    name: Update Theneo API Documentation
+    name: Update Theneo Documentation
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -18,16 +18,14 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH:  PostmanCollections/collection.json
+          FILE_PATH: PostmanCollections/collection.json
+
           PROJECT_SLUG: github-actions
-      
-          WORKSPACE_SLUG: mariam-n-testing
+          WORKSPACE_SLUG: mariam-n-testingg
 
           SECRET: b41cf9a2-983e-4215-8db6-f3b1c9b8facd
 
           AUTO_PUBLISH: true
 
           IMPORT_OPTION: overwrite
-          
-
           INCLUDE_GITHUB_METADATA: true
