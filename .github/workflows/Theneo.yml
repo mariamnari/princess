@@ -18,7 +18,7 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: postmanCollection/collection.json
+          FILE_PATH: postmanCollections/collection.json
 
           PROJECT_SLUG: github-actions
       
