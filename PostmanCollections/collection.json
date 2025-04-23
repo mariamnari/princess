@@ -1,0 +1,1919 @@
+{
+	"info": {
+		"_postman_id": "89839efb-ba45-4d95-b506-f273ddcf52d1",
+		"name": "Theneo <> LSEG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"id": "26bf2cba-d164-4771-a2d2-559b3accd0cb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzU5YWFiMTkyYzJiMzcwNjZkOTJiOGQiLCJpYXQiOjE3MzM5Mjk4MzksImV4cCI6MTczMzk3MzAzOSwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiOTNiYjViZjQtNDlhYi00YmI1LTliNjUtMTIwODE1M2U3ZjZkIn0.XVYXHK_i5ty-UKHoxuvyKw9NAq0WbyYOE4VnlVQ8lWM"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"mariam.narimanidze@theneo.io\",\n  \"password\": \"Theneo1234!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.theneo.live/auth/login/test"
+			},
+			"response": []
+		},
+		{
+			"name": "Invite a team member test",
+			"id": "e4c7f756-cc3d-4e17-ae04-e6cb676547c8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzIxNzc2OTUsImV4cCI6MTczMjIyMDg5NSwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiYjBkNjQ4ZmItMTJhYS00MWNjLThiNzYtMDQxMjBhMGM0NTA0In0.QCQICQ9pJEfBLV-LxDKAike5eecrqZNfE3dSleCXLNE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Beka\",\n  \"last_name\": \"Arabidze\",\n  \"email\": \"beka@theneo.io\",\n  \"role\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/invite"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve team members",
+			"id": "8611768f-f94f-4443-a7a4-74fdfa726fdf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzIxNzc2OTUsImV4cCI6MTczMjIyMDg5NSwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiYjBkNjQ4ZmItMTJhYS00MWNjLThiNzYtMDQxMjBhMGM0NTA0In0.QCQICQ9pJEfBLV-LxDKAike5eecrqZNfE3dSleCXLNE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d"
+			},
+			"response": []
+		},
+		{
+			"name": "Update team members role",
+			"id": "72877fb4-b291-4347-821d-433d4baa4ef6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDc2MWQ2OGViMTY5MWQxNTI0NDNkZTkiLCJpYXQiOjE3MzIxNzk4NzcsImV4cCI6MTczMjIyMzA3NywidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiYWM0MzViNDctZjEwYi00ZjcwLWIyYjEtNjYwMWY2Njg5MjM1In0.b-Db3uOeblXwoYde6XESzX1zbgdUMwX5bDoW5jEn78g"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDc2MWQ2OGViMTY5MWQxNTI0NDNkZTkiLCJpYXQiOjE3MzIxNzk4NzcsImV4cCI6MTczMjIyMzA3NywidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiYWM0MzViNDctZjEwYi00ZjcwLWIyYjEtNjYwMWY2Njg5MjM1In0.b-Db3uOeblXwoYde6XESzX1zbgdUMwX5bDoW5jEn78g"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"role\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.theneo.io/admin/companies/60fe9cb2222051bd585f88c3/654213ae1cf4993b371f10ba"
+			},
+			"response": []
+		},
+		{
+			"name": "Invite user to the project",
+			"id": "ae8f8d95-fca1-455f-9c66-60393559fad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"users\": [\n    {\n      \"email\": \"hello@theneo.io\",\n      \"role\": \"viewer\"\n    }\n  ],\n  \"do_notify\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.theneo.live/project/673b288553a1bb04b2eced98/share"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a list of users",
+			"id": "4b058207-98a7-44e4-affe-c55cbdf3fbdf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzIwODc1MjAsImV4cCI6MTczMjEzMDcyMCwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiN2E1YjhhN2YtZjEwOS00OWRhLTgyMDUtNWRkYmUzMjAxZjE3In0.6p7McQ6PBIK1m4tmTU4IMFvVRRzjs1p7K89SxZGOpDY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": "https://api.theneo.live/project/673b288553a1bb04b2eced98/accessible-users"
+			},
+			"response": []
+		},
+		{
+			"name": "Change user role to the project",
+			"id": "c190aae3-459f-495b-94a3-bf5a316c100b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzIwODc1MjAsImV4cCI6MTczMjEzMDcyMCwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiN2E1YjhhN2YtZjEwOS00OWRhLTgyMDUtNWRkYmUzMjAxZjE3In0.6p7McQ6PBIK1m4tmTU4IMFvVRRzjs1p7K89SxZGOpDY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"changed_access\": [\n    {\n      \"user_id\": \"66c49bc685c0d8e11fb2e02f\",\n      \"type\": \"guest\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.theneo.live/project/673d62a9ced726a96b36ae54/change-access"
+			},
+			"response": []
+		},
+		{
+			"name": "Create project",
+			"id": "f75d515c-8124-4f22-8f39-a4a02aa52fe7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-theneo-api-key",
+						"value": "e471ea1f-96e3-4a0f-a13b-6645e77375a9"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"type": "text",
+							"key": "projectName",
+							"value": "Pet Store API Documentation"
+						},
+						{
+							"type": "text",
+							"key": "isPublic",
+							"value": "true"
+						},
+						{
+							"type": "text",
+							"key": "publish",
+							"value": "true"
+						},
+						{
+							"type": "text",
+							"key": "descriptionGenerationType",
+							"value": "shouldOverride"
+						},
+						{
+							"type": "text",
+							"key": "link",
+							"value": "https://petstore3.swagger.io/api/v3/openapi.json"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"value": null
+						}
+					]
+				},
+				"url": "https://api.theneo.live/api/project"
+			},
+			"response": [
+				{
+					"id": "60842a7e-5269-4a58-85d9-718486248fbc",
+					"name": "Create project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"type": "text",
+									"key": "projectName",
+									"value": "test"
+								},
+								{
+									"type": "text",
+									"key": "publish",
+									"value": "true"
+								},
+								{
+									"type": "text",
+									"key": "isPublic",
+									"value": "true"
+								},
+								{
+									"type": "text",
+									"key": "sampleFile",
+									"value": "true"
+								},
+								{
+									"type": "text",
+									"key": "descriptionGenerationType",
+									"value": "false"
+								},
+								{
+									"type": "text",
+									"key": "postmanCollections",
+									"value": "<string>,<string>"
+								},
+								{
+									"type": "text",
+									"key": "postmanKey",
+									"value": "<string>"
+								},
+								{
+									"type": "text",
+									"key": "workspaceId",
+									"value": "<string>"
+								},
+								{
+									"type": "text",
+									"key": "link",
+									"value": "<string>"
+								},
+								{
+									"type": "text",
+									"key": "text",
+									"value": "<string>"
+								},
+								{
+									"type": "text",
+									"key": "otherDocumentType",
+									"value": "<string>"
+								}
+							]
+						},
+						"url": "https://api.theneo.live/api/project"
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:10:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "content-security-policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "cross-origin-embedder-policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "cross-origin-resource-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "x-dns-prefetch-control",
+							"value": "off"
+						},
+						{
+							"key": "expect-ct",
+							"value": "max-age=0"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "origin-agent-cluster",
+							"value": "?1"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732029225"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"5b-UaDQ8U31x0rDU5BD3kfskvANAfs\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"code\": 500,\n    \"message\": \"Internal Server Error, We've already sent notification to our team\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get project creation status",
+			"id": "941137c7-c7fd-4c72-a826-8d5bf3f31b2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"addTokenTo": "header"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-theneo-api-key",
+						"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "https://api.theneo.live/api/project/creation-status/673b288553a1bb04b2eced98"
+			},
+			"response": [
+				{
+					"id": "2f0d38e5-db71-4353-87ec-e63370a69195",
+					"name": "Get project creation status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "https://api.theneo.live/api/project/creation-status/673b33dd4596d1b104b69b5a"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:15:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "165"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732029525"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a5-Ymge8qfJx5jsZKpLkHSNYnA2mVg\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"_id\": \"673b33dd4596d1b104b69b5a\",\n    \"key\": \"sample\",\n    \"name\": \"sample\",\n    \"updatedAt\": \"2024-11-19T14:46:38.458Z\",\n    \"creationStatus\": \"TIMEOUT\",\n    \"descriptionGenerationProgress\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "preview by project id",
+			"id": "d8a0d9ad-d645-4c99-99cf-19833e373b08",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "441de0ef-59e7-486a-bfcb-b4c2928bccf7",
+					"name": "preview by project id",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.theneo.live/publish/673b33dd4596d1b104b69b5a/673b33dd4596d1b104b69b5d/preview?parentSectionId=673b33de4596d1b104b69b63",
+							"protocol": "https",
+							"host": [
+								"api",
+								"theneo",
+								"live"
+							],
+							"path": [
+								"publish",
+								"673b33dd4596d1b104b69b5a",
+								"673b33dd4596d1b104b69b5d",
+								"preview"
+							],
+							"query": [
+								{
+									"key": "parentSectionId",
+									"value": "673b33de4596d1b104b69b63"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:17:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-hAq/mn4WtTA8t2uNjz59nlC357w\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Please authenticate\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Publish Project",
+			"id": "19d42019-50df-40ca-ba10-03695ea5725e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "6cdea228-b8e5-4771-af0e-65ad48f8e92b",
+					"name": "Publish Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.theneo.live/api/publish/673b288553a1bb04b2eced98?versionId=673b288553a1bb04b2eced9b",
+							"protocol": "https",
+							"host": [
+								"api",
+								"theneo",
+								"live"
+							],
+							"path": [
+								"api",
+								"publish",
+								"673b288553a1bb04b2eced98"
+							],
+							"query": [
+								{
+									"key": "versionId",
+									"value": "673b288553a1bb04b2eced9b"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:19:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732029825"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-b4MKqqcF2ipslRl++xr0IXR7zmM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"projectKey\": \"theneo-sample-project\",\n    \"baseUrlRequired\": false,\n    \"companySlug\": \"theneo-test\",\n    \"publishedPagePath\": \"theneo-test/theneo-sample-project\",\n    \"publishedPageUrl\": \"https://app.theneo.live/theneo-test/theneo-sample-project\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create new project version",
+			"id": "276844d0-1e5f-4730-848c-d4e59a720e2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "b9c4b4b9-7d82-498f-935e-988702b4f146",
+					"name": "Create new project versions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"projectId\": \"673b33dd4596d1b104b69b5a\",\n  \"name\": \"test\",\n  \"previousVersionId\": \"673b33dd4596d1b104b69b5d\",\n  \"isNewVersion\": \"true\",\n  \"isEmpty\": \"false\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.theneo.live/api/project-version"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:22:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "665"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732029825"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"299-wvYobs4TiwZMWwS5FCBZsiFrRzw\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"projectId\": \"673b33dd4596d1b104b69b5a\",\n    \"name\": \"test\",\n    \"slug\": \"test\",\n    \"isDefaultVersion\": false,\n    \"analyticsEnabled\": true,\n    \"isApiExplorerEnabled\": true,\n    \"isGptSearchEnabled\": false,\n    \"isAdvancedAccessEnabled\": false,\n    \"isChangelogEnabled\": true,\n    \"isUrlEncodingEnabled\": false,\n    \"isPreRequestScriptEnabled\": false,\n    \"isHidden\": false,\n    \"preRequestScript\": {\n        \"variables\": []\n    },\n    \"logSubscribers\": [],\n    \"isPublished\": false,\n    \"publishedAt\": null,\n    \"baseUrl\": \"http://example.io\",\n    \"seoImage\": \"\",\n    \"seoNoIndex\": false,\n    \"pageTitle\": \"\",\n    \"pageDescription\": \"\",\n    \"query\": [],\n    \"body\": [],\n    \"path\": [],\n    \"header\": [],\n    \"createdAt\": \"2024-11-19T15:22:51.278Z\",\n    \"updatedAt\": \"2024-11-19T15:22:51.278Z\",\n    \"__v\": 0,\n    \"id\": \"673cad4bbb565355a18e99a8\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete project version",
+			"id": "ad5c9b2c-d0af-4529-bdfd-a8719b53a792",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "e89ba942-8352-4050-8bab-34a0235df8fd",
+					"name": "Delete project version",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"projectId\": \"673b33dd4596d1b104b69b5a\",\n  \"name\": \"test\",\n  \"previousVersionId\": \"673b33dd4596d1b104b69b5d\",\n  \"isNewVersion\": \"true\",\n  \"isEmpty\": \"false\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.theneo.live/api/project-version/673cad4bbb565355a18e99a8"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:26:12 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "98"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732030125"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete project",
+			"id": "8153f1d7-aba1-410d-8907-a36062c66a8b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "8ab9ea8c-6040-4e01-a5dc-66e3dad65fdb",
+					"name": "Delete project",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "https://api.theneo.live/api/project/673b33dd4596d1b104b69b5a"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:27:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "97"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732030125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-JB+FtqQpNT/RPfGMpENgHRSu5MQ\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"data\": null,\n    \"message\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all projects",
+			"id": "5ebcb015-cffe-4b6c-ae2d-40de6c2bc5c0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "2477df93-f1a3-4ac2-aa7c-fbe700ac58f8",
+					"name": "Get all projects",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "x-theneo-api-client",
+								"value": "<string>"
+							},
+							{
+								"key": "x-theneo-api-client-version",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "https://api.theneo.live/api/project"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2024 15:28:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "507"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "96"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1732030125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1fb-npeZCl1KDPVUiNHPAMPhhO0KpHY\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"companyId\": \"673b288553a1bb04b2eced7d\",\n        \"createdAt\": \"2024-11-18T11:44:05.439Z\",\n        \"key\": \"theneo-sample-project\",\n        \"name\": \"Theneo sample project\",\n        \"isPublic\": false,\n        \"company\": {\n            \"name\": \"Theneo test\",\n            \"slug\": \"theneo-test\",\n            \"sectionIcons\": [],\n            \"corporateId\": \"66b61e6d05db9136eb5f1475\",\n            \"domainWhitelist\": false,\n            \"is_two_factor_enabled\": false,\n            \"id\": \"673b288553a1bb04b2eced7d\",\n            \"updatedBy\": \"66c49a7585c0d8e11fb2e019\",\n            \"createdAt\": \"2024-11-18T11:44:05.005Z\",\n            \"updatedAt\": \"2024-11-18T12:31:09.029Z\"\n        },\n        \"id\": \"673b288553a1bb04b2eced98\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get changelogs for a project",
+			"id": "f0c638f2-f12c-4a50-b1a8-64cf9761c875",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "0f634b92-9caf-4d91-a691-bd13af0c7eb8",
+					"name": "Get changelogs for a project",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "x-theneo-api-key",
+								"value": "808ce35b-237a-4edb-b56a-6bf46a4db492"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.theneo.live/changelog/673b288553a1bb04b2eced98/673b288553a1bb04b2eced9b?sortBy=<string>&limit=<string>&page=<string>",
+							"protocol": "https",
+							"host": [
+								"api",
+								"theneo",
+								"live"
+							],
+							"path": [
+								"changelog",
+								"673b288553a1bb04b2eced98",
+								"673b288553a1bb04b2eced9b"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "<string>"
+								},
+								{
+									"key": "limit",
+									"value": "<string>"
+								},
+								{
+									"key": "page",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 20 Nov 2024 11:49:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b2-eUYLGpHPCddChWu3HCfoWsfWYxI\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"data\": {\n        \"docs\": [],\n        \"totalDocs\": 1,\n        \"limit\": 0,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    },\n    \"message\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get project creation status",
+			"id": "cac20ced-8f6e-4a2d-ad59-cc6bb83f7b94",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "preview by project id",
+			"id": "7f24cf92-a83c-4611-b807-9ea1b46993a8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Publish project",
+			"id": "3ebded63-a296-4b33-9efa-431e0a555580",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete project version",
+			"id": "6a3e876f-c7f9-4b4d-87da-282011bcff66",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete project",
+			"id": "c2ed95fa-b183-4235-8252-a721abac5140",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Change password",
+			"id": "5ce51a5a-ccc7-442c-b1d8-5c9871f9fd6c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"id": "ef626555-eb10-472c-834f-f83b2b402a29",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get accessible workspaces for project filtering",
+			"id": "3c74c8f1-764d-4857-a312-de50adf24690",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "0537644a-95ef-4f12-bf80-09f004d72b29",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get user profiles by id",
+			"id": "31e8adaa-77f8-4a19-b61f-da04a28db4bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"id": "22cba644-0208-4560-b97c-325101ce4bb0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update notification read time",
+			"id": "86fc2adb-4ca4-48d2-9a35-3ab0deb99126",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update if user should recieve email and marketing notifications",
+			"id": "e579a8e8-1e18-47de-9938-3d2aa95f7861",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"id": "51ecd354-6605-48dc-af95-bf0dc518b525",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"id": "666f4dd3-b97a-4aa7-a1d5-8b944936e22f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Import project",
+			"id": "f32e879c-5432-4822-91c5-e64333b22a60",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"id": "d5986663-67e1-4b76-8949-36a23faab28a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "test/postman"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzM5MjkwNzEsImV4cCI6MTczMzk3MjI3MSwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiMWQwZWQzMzctZjYyZC00NDNiLWIwNGMtN2VlNmVkYzdlYjJkIn0.Ki4oTx8hWE_8W94Y8HuzBfaZhQOa0XxmvibuU_twYVM"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "de628746-2d5d-4100-89aa-405094add084",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "44acac2d-1751-4abb-97c2-fdb69571903f",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
