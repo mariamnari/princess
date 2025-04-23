@@ -2013,6 +2013,25 @@
 				"url": "test/request"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "a59403b9-10c3-4b90-89db-5d59289863ba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "test",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": "new/request"
+			},
+			"response": []
 		}
 	],
 	"auth": {
