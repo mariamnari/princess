@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "test",
+			"name": "authorization",
 			"id": "26bf2cba-d164-4771-a2d2-559b3accd0cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -34,7 +34,7 @@
 						}
 					}
 				},
-				"url": "https://api.theneo.live/auth/login/test/v1"
+				"url": "https://api.theneo.live/auth/login/"
 			},
 			"response": []
 		},
@@ -68,7 +68,128 @@
 				},
 				"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/invite"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "1c936704-37f4-4e9f-a84b-32e358d3ed0a",
+					"name": "invite team member",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NmM0OWE3NTg1YzBkOGUxMWZiMmUwMTkiLCJpYXQiOjE3MzIxNzc2OTUsImV4cCI6MTczMjIyMDg5NSwidHlwZSI6ImFjY2VzcyIsInVzZXJUeXBlIjpudWxsLCJ0b2tlbklkIjoiYjBkNjQ4ZmItMTJhYS00MWNjLThiNzYtMDQxMjBhMGM0NTA0In0.QCQICQ9pJEfBLV-LxDKAike5eecrqZNfE3dSleCXLNE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Beka\",\n  \"last_name\": \"Arabidze\",\n  \"email\": \"beka@theneo.io\",\n  \"role\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.theneo.live/admin/companies/673b288553a1bb04b2eced7d/invite"
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 23 Apr 2025 15:04:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Embedder-Policy",
+							"value": "require-corp"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-hAq/mn4WtTA8t2uNjz59nlC357w\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Please authenticate\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Retrieve team members",
@@ -1682,19 +1803,6 @@
 			"request": {
 				"method": "GET",
 				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "test",
-			"id": "47abb581-ffcf-4254-b721-14db16f19c42",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "test"
 			},
 			"response": []
 		}
