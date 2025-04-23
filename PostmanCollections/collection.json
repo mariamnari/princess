@@ -34,12 +34,12 @@
 						}
 					}
 				},
-				"url": "https://api.theneo.live/auth/login/test"
+				"url": "https://api.theneo.live/auth/login/"
 			},
 			"response": []
 		},
 		{
-			"name": "Invite a team member test",
+			"name": "invite team member",
 			"id": "e4c7f756-cc3d-4e17-ae04-e6cb676547c8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -265,7 +265,7 @@
 						}
 					]
 				},
-				"url": "https://api.theneo.live/api/project"
+				"url": "https://api.theneo.live/api/project/test"
 			},
 			"response": [
 				{
@@ -1882,6 +1882,19 @@
 				"method": "GET",
 				"header": [],
 				"url": "test/postman"
+			},
+			"response": []
+		},
+		{
+			"name": "test request",
+			"id": "101a32ad-9a71-4081-8e3b-781dcd1285ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "test/request"
 			},
 			"response": []
 		}
