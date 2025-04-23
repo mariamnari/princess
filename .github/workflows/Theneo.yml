@@ -19,13 +19,8 @@ jobs:
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
           FILE_PATH: PostmanCollections/collection.json
-
-          PROJECT_SLUG: github-actions
-          WORKSPACE_SLUG: mariam-testing
-
+          PROJECT_SLUG: github-postman-test
           SECRET: b41cf9a2-983e-4215-8db6-f3b1c9b8facd
-
           AUTO_PUBLISH: true
-
           IMPORT_OPTION: overwrite
           INCLUDE_GITHUB_METADATA: true
