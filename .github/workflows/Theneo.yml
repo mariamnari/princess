@@ -1,26 +1,38 @@
-name: Update Documentation
+name: Push to Theneo
+
 on:
-  pull_request:
+  push:
     branches:
       - main
+  workflow_dispatch:
+
 jobs:
-  update-doc:
-    name: Update Theneo Documentation
+  push-openapi-to-theneo:
     runs-on: ubuntu-latest
+    
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
-      - name: Update Documentation on Theneo
-        uses: Theneo-Inc/api-documentation@1.8.0
-        with:
-          FILE_PATH: PostmanCollections/collection.json
-          PROJECT_SLUG: github-postman-test
-          SECRET: b41cf9a2-983e-4215-8db6-f3b1c9b8facd
-          AUTO_PUBLISH: true
-          IMPORT_OPTION: overwrite
-          INCLUDE_GITHUB_METADATA: true
+          node-version: '22'
+      
+      - name: Install Theneo CLI
+        run: npm install -g @theneo/cli@latest
+      
+      - name: Login to Theneo (Dev)
+        run: |
+          echo "Logging in to Theneo (Dev)..."
+          theneo login --profile dev --token d04e5295-6daa-4fd5-9491-7b3fd3cd233e --api-url https://api-dev.theneo.io --app-url https://app-dev.theneo.io
+      
+      
+      - name: Push docs to Theneo
+        run: |
+          echo "Pushing docs to Theneo..."
+          theneo import \
+            --project sample-theneo-doc \
+            --workspace wexinc \
+            --dir /Users/marieedelstein/Downloads/wex-benefits-v1.0-2025-11-06T21-05-48_894c175
+            --profile dev
